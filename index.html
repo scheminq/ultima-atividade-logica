@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade</title>
+</head>
+<body>
+    <script>
+
+        function verificarIdade ()
+        {
+            let idade = parseInt(prompt("Insira a sua idade:"));
+            if (isNaN(idade))
+            {
+                alert("Insira uma idade válida e tente novamente.")
+            }
+            
+            if (idade < 18)
+            {
+                document.write("Você é menor de idade e não pode dirigir.")
+            }
+            else 
+            {
+                document.write("Você é maior de idade e pode dirigir.")
+            }
+        }
+        
+        verificarIdade();
+        
+        
+        
+        
+        </script>
+</body>
+</html>
